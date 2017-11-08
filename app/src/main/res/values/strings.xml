@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">NewsWallet</string>
+    <string name="err_telephone">Only Phone Number Allowed</string>
+    <string name="edit_text_hint">Enter your Number..</string>
+    <string name="otp_text">Enter OTP</string>
+    <string name="name">Enter your Name</string>
+    <string name="email">Enter your Email</string>
+    <string name="title_activity_home">Home</string>
+    <string name="referer">Referer Code</string>
+    <string name="alert_visit">visit</string>
+    <string name="alert_cancel">cancel</string>
+    <string name="news_overview">Overview</string>
+    <string name="permission_denied_msg">Permission not Granted</string>
+    <string name="permission_ask_msg">For security reason we would like to have your IMEI number. In order to get it, we need permission access.</string>
+    <string name="splash_tagLine">Earn Free Patm Cash</string>
+    <string name="refer_text">Hey, I have won $50 using this app, Try this with my refer Code : </string>
+
+        <string name="rateus">AndroidBegin.com RateUs Tutorial</string>
+        <string name="menu_settings">Settings</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="terms">This is the terms and condition. Before moving forward you need to
+    read these terms and condidtions carefully in order to get full benifit of this app.
+    NewsWallet reserves the right to delete or block the account of any user without any prior notice.
+        This is the terms and condition. Before moving forward you need to
+    read these terms and condidtions carefully in order to get full benifit of this app.
+    NewsWallet reserves the right to delete or block the account of any user without any prior notice.
+        This is the terms and condition. Before moving forward you need to
+    read these terms and condidtions carefully in order to get full benifit of this app.
+    NewsWallet reserves the right to delete or block the account of any user without any prior notice.
+        This is the terms and condition. Before moving forward you need to
+    read these terms and condidtions carefully in order to get full benifit of this app.
+    NewsWallet reserves the right to delete or block the account of any user without any prior notice.
+        This is the terms and condition. Before moving forward you need to
+    read these terms and condidtions carefully in order to get full benifit of this app.
+    NewsWallet reserves the right to delete or block the account of any user without any prior notice.
+        This is the terms and condition. Before moving forward you need to
+    read these terms and condidtions carefully in order to get full benifit of this app.
+    NewsWallet reserves the right to delete or block the account of any user without any prior notice.
+
+    </string>
+</resources>

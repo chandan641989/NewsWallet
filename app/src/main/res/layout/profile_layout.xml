@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/action_bar"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/profileToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/backArrow"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/backarrow"
+                    />
+
+                <TextView
+                    android:id="@+id/profileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar">
+
+        <RelativeLayout
+            android:id="@+id/relLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/Name_lable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:background="@null"
+                android:hint="Name"
+                android:inputType="textNoSuggestions" />
+
+            <TextView
+                android:id="@+id/Name_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Name_lable"
+                android:layout_alignBottom="@+id/Name_lable"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:inputType="textNoSuggestions"
+                android:text="Test Name" />
+        </RelativeLayout>
+        <!--  Display name section  -->
+        <RelativeLayout
+            android:id="@+id/relLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/relLayout1"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/email" />
+
+            <TextView
+                android:id="@+id/email_lable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:background="@null"
+                android:hint="Email"
+                android:inputType="textNoSuggestions" />
+            <TextView
+                android:id="@+id/email_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:text="test@gmail.com"
+                android:inputType="textNoSuggestions" />
+        </RelativeLayout>
+        <!-- website section  -->
+        <RelativeLayout
+            android:id="@+id/relLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/relLayout2"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/mobile_drawable"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mobile" />
+
+            <TextView
+                android:id="@+id/mobile_lable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:background="@null"
+                android:inputType="textNoSuggestions"
+                android:text="Mobile No." />
+            <TextView
+                android:id="@+id/mobile_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:inputType="textNoSuggestions"
+                android:text="Mobile No" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kartnap.chandan.newswallet.ReadMoreActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/action_bar"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/profileToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="3dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/backarrow"
+                />
+
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OverView"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_alignParentTop="true" />
+            <ImageView
+                android:id="@+id/share"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_menu_share"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/action_bar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="5dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_title"
+            android:textSize="20sp"
+            android:layout_below="@+id/thumbnail"
+            android:text="Title"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_overview"
+            android:padding="10dp"
+            android:layout_below="@+id/news_title"
+            android:textSize="18sp"
+            android:text="hello how are you"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Source :"
+            android:id="@+id/source_text"
+            android:textSize="20sp"
+            android:layout_below="@+id/news_overview"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="read more.."
+            android:padding="10dp"
+            android:layout_below="@+id/source_text"
+            android:id="@+id/readMoreLink"
+            android:clickable="true"
+            android:textSize="20sp"
+            android:textColor="@color/light_green"
+            android:onClick="open_url"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
